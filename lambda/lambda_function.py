@@ -3,5 +3,5 @@ import json
 def lambda_handler(event, context):
  return {
      'statusCode': 200,
-     'body': json.dumps('Hello from CICD Lambda new test!')
+     'body': json.dumps('Hello from CICD Lambda sec new test!')
     }
