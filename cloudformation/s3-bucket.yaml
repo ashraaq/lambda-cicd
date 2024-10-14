@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: 'S3 Bucket For Our CICD PR'
+Description: 'S3 Bucket For Our CICD PR with env tag'
 
 Parameters: #define input parameters for our template
  Environment:  # first oue named env # we named it env bec we want to make test env 
@@ -16,7 +16,7 @@ Resources:
    Properties: 
      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket'
      Tags: 
-       - Key: Environment
+       - Key: project
          Value: !Ref Environment
        - Key: Environment
          Value: GithubActionsTesting 
