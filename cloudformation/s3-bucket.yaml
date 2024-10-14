@@ -11,10 +11,10 @@ Parameters: #define input parameters for our template
      - production 
 
 Resources: 
- MyS3Bucket: 
+ MyBucket: 
    Type: 'AWS::S3::Bucket'
    Properties: 
-     BucketName: !Sub '${AWS::$StackName}-${Environment2}-bucket'
+     BucketName: !Sub '${AWS::StackName}-${Environment}-bucket'
      Tags: 
        - Key: Environment
          Value: !Ref Environment
