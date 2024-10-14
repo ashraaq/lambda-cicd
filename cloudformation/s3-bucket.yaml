@@ -11,7 +11,7 @@ Parameters: #define input parameters for our template
      - production 
 
 Resources: 
- MyBucket: 
+ MyASHBucket: 
    Type: 'AWS::S3::Bucket'
    Properties: 
      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket'
