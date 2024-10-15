@@ -2,8 +2,10 @@ name: Validate CloudFormation 0n PR
 
 on : 
  pull_request:
-     paths:
-         - 'cloudformation/**'   # the wf will be triggered only when we create changes to cf folder 
+     paths:  
+         - 'workflows/**'
+
+  # the wf will be triggered only when we create changes to cf folder 
 
 permissions: # here we give permissions to the gh token to write the pr and read the content 
   pull-requests: write 
